@@ -9,7 +9,7 @@ class MissionsController < ApplicationController
 
     def create
         mission = Mission.create!(params_mission)
-        render json: mission
+        render json: mission.planet, status: :created
     end
 
     private
