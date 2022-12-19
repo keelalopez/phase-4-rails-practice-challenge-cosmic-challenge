@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 puts "Clearing db..."
-Planet.destroy_all
-Scientist.destroy_all
-Mission.destroy_all
+# Planet.destroy_all
+# Scientist.destroy_all
+# Mission.destroy_all
 
 Faker::TvShows::StarTrek.unique.clear
 Faker::Space.unique.clear
